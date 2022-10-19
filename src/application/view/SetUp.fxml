@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1225.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SetUpController">
+   <children>
+      <Label layoutX="432.0" layoutY="38.0" text="SET UP" textFill="#d66309" AnchorPane.leftAnchor="462.0" AnchorPane.rightAnchor="462.0">
+         <font>
+            <Font name="Arial Black" size="74.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="196.0" prefHeight="67.0" prefWidth="298.0" style="-fx-border-color: ORANGE;" text=" Background Color" textFill="#d66309">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="colorpicker_bgc" layoutX="732.0" layoutY="208.0" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE;" />
+      <ColorPicker fx:id="colorpicker_wc" layoutX="734.0" layoutY="331.0" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE;" />
+      <Button fx:id="btn_save" layoutX="1089.0" layoutY="668.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="63.0" prefWidth="115.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE; -fx-border-width: 3px;" text="SAVE" textFill="#d66309">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="48.0" fitWidth="174.0" layoutX="782.0" layoutY="78.0">
+         <image>
+            <Image url="@../../inputFiles/decoration.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="174.0" layoutX="271.0" layoutY="77.0">
+         <image>
+            <Image url="@../../inputFiles/decoration.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="332.0" layoutY="317.0" prefHeight="67.0" prefWidth="298.0" style="-fx-border-color: ORANGE;" text="       Wall Color" textFill="#d66309">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="437.0" prefHeight="67.0" prefWidth="298.0" style="-fx-border-color: ORANGE;" text="        Difficulty" textFill="#d66309">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo_difficulty" layoutX="732.0" layoutY="450.0" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE;" AnchorPane.leftAnchor="732.0" />
+      <Label layoutX="338.0" layoutY="556.0" prefHeight="67.0" prefWidth="298.0" style="-fx-border-color: ORANGE;" text="          Music" textAlignment="CENTER" textFill="#d66309">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo_music" layoutX="739.0" layoutY="571.0" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE;" AnchorPane.leftAnchor="732.0" />
+   </children>
+</AnchorPane>

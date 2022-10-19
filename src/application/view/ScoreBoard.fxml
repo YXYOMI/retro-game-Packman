@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="isWin" prefHeight="750.0" prefWidth="1225.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ScoreBoardController">
+   <children>
+      <Button fx:id="btn_back" layoutX="78.0" layoutY="665.0" mnemonicParsing="false" onAction="#btn_back" prefHeight="64.0" prefWidth="175.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE; -fx-border-width: 3px;" text="&lt;&lt; BACK" textFill="#d66309" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="78.0">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="416.0" layoutY="41.0" text="ScoreBoard" textFill="#d66309" AnchorPane.leftAnchor="376.0" AnchorPane.rightAnchor="376.0">
+         <font>
+            <Font name="Arial Black" size="74.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_continue" layoutX="1015.0" layoutY="665.0" mnemonicParsing="false" onAction="#btn_restart" prefHeight="64.0" prefWidth="175.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE; -fx-border-width: 3px;" text="RESTART &gt;&gt;" textFill="#d66309" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="67.0">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="48.0" fitWidth="174.0" layoutX="191.0" layoutY="81.0">
+         <image>
+            <Image url="@../../inputFiles/decoration.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="174.0" layoutX="877.0" layoutY="79.0">
+         <image>
+            <Image url="@../../inputFiles/decoration.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="419.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank" wrappingWidth="129.95672607421875">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="599.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" wrappingWidth="174.0" AnchorPane.topAnchor="177.9765625">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="419.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO.1" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="419.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="score1" fill="WHITE" layoutX="609.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="609.0" AnchorPane.topAnchor="252.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="score2" fill="WHITE" layoutX="610.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="317.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="score3" fill="WHITE" layoutX="611.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="611.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="score4" fill="WHITE" layoutX="610.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="610.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="score5" fill="WHITE" layoutX="609.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="609.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="score6" fill="WHITE" layoutX="611.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="611.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="95.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Grade" textAlignment="CENTER" wrappingWidth="225.0">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="128.0" layoutX="98.0" layoutY="176.0" stroke="#d66309" strokeType="INSIDE" strokeWidth="3.0" width="293.0" AnchorPane.leftAnchor="67.0" />
+      <Text fx:id="scoreThis" fill="WHITE" layoutX="95.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="95.01498413085938">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="difficultyThis" fill="WHITE" layoutX="212.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="115.01498413085938">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="419.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO.2" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="419.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="416.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO.3" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="419.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="421.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO.4" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="419.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="419.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO.5" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="419.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="422.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO.6" textAlignment="CENTER" wrappingWidth="115.01498413085938" AnchorPane.leftAnchor="422.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="795.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty" wrappingWidth="235.6605224609375" AnchorPane.topAnchor="178.0">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Text>
+      <Text fx:id="diffi1" fill="WHITE" layoutX="803.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="175.0" AnchorPane.leftAnchor="803.0" AnchorPane.topAnchor="252.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="diffi2" fill="WHITE" layoutX="795.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="175.0" AnchorPane.leftAnchor="803.0" AnchorPane.topAnchor="317.2841796875">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="diffi3" fill="WHITE" layoutX="862.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="175.0" AnchorPane.leftAnchor="803.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="diffi4" fill="WHITE" layoutX="861.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="175.0" AnchorPane.leftAnchor="803.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="diffi5" fill="WHITE" layoutX="870.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="175.0" AnchorPane.leftAnchor="803.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="diffi6" fill="WHITE" layoutX="872.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(..)" textAlignment="CENTER" wrappingWidth="175.0" AnchorPane.leftAnchor="803.0">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

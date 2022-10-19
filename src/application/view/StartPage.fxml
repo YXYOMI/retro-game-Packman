@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1225.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.StartPageController">
+   <children>
+      <Button fx:id="btn_setup" layoutX="97.0" layoutY="540.0" mnemonicParsing="false" onAction="#gotoSetUp" prefHeight="73.0" prefWidth="157.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE; -fx-border-width: 2;" text="SET UP" textFill="#d66309" AnchorPane.leftAnchor="97.0">
+         <font>
+            <Font name="Avenir Black" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_start" layoutX="556.0" layoutY="538.0" mnemonicParsing="false" onAction="#startGame" prefHeight="73.0" prefWidth="157.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE; -fx-border-width: 2;" text="START" textFill="#d66309">
+         <font>
+            <Font name="Avenir Black" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_quit" layoutX="1012.0" layoutY="537.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="73.0" prefWidth="157.0" style="-fx-background-color: BLACK; -fx-border-color: ORANGE; -fx-border-width: 2;" text="EXIT" textFill="#d66309" AnchorPane.rightAnchor="98.0">
+         <font>
+            <Font name="Avenir Black" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="147.0" fitWidth="700.0" layoutX="303.0" layoutY="232.0" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="284.0">
+         <image>
+            <Image url="@../../inputFiles/pacman.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="400.0" layoutX="430.0" layoutY="102.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="437.0">
+         <image>
+            <Image url="@../../inputFiles/decoration.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
