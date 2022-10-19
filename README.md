@@ -1,5 +1,7 @@
 # retro-game-Packman
 
+Completed in Dec, 2019.
+
 Maintaining and Extending a modern version of classic retro game (Packman).
 
 src - Contains all the source codes of the project.
